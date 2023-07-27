@@ -10,6 +10,12 @@ namespace Demo
         {
             int[] numbers = new[] { 23, 1, 3, 5, 6, 6, 8 };
 
+
+            // написать фукцию для numbers которая вернет bool true/false, if any element exists in array.
+
+            // Exists(5)   - true
+            // Exists(33)  - false
+
             var result = numbers.MaxNumber();
 
 
