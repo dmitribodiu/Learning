@@ -15,7 +15,7 @@ namespace Demo
 
 
             int[] numbers = new[] { 23, 1, 3, 5, 6, 6, 8 };
-            bool number = numbers.SearchNumber(5);
+            bool number = numbers.SearchNumberFor(5);
             if (number)
             {
                 Console.WriteLine("5");
@@ -67,35 +67,6 @@ namespace Demo
 
             //Console.ReadKey();
         }
-    }
-
-    public static class Utils
-    {
-        //public static bool Oleg(this string text, int param)
-        //{
-        //    if (param == text.Length)
-        //    {
-        //        return true;
-        //    }
-        //    else
-        //    {
-        //        return false;
-        //    }
-        //}
-
-        public static bool SearchNumber(this int[] array, int number)
-        {
-            
-                if (number == array.Length)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        
     }
 }
             
