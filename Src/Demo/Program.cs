@@ -10,19 +10,29 @@ namespace Demo
         static void Main(string[] args)
         {
 
+            Console.WriteLine("Please enter numbers followed by comma:");
+            var collectionAsString = Console.ReadLine();
+            var collection = collectionAsString.Split(',');
 
+            int[] numbers = new int[collection.Length];
 
+            for (int i = 0; i < collection.Length; i++)
+            {
+                numbers[i] = int.Parse(collection[i]);
+            }
 
+            Console.WriteLine("Please enter a number:");
+            var enteredNumber = Console.ReadLine();
+            int answerAsInt = int.Parse(enteredNumber);
 
-            int[] numbers = new[] { 23, 1, 3, 5, 6, 6, 8 };
-            bool number = numbers.SearchNumberFor(5);
+            bool number = numbers.SearchNumberFor(answerAsInt);
             if (number)
             {
-                Console.WriteLine("5");
+                Console.WriteLine("true");
             }
             else
             {
-                Console.WriteLine("5");
+                Console.WriteLine("false");
             }
             Console.ReadKey();
 
