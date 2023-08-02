@@ -11,6 +11,13 @@ namespace CSLight
     {
         static void Main(string[] args)
         {
+            Task1();
+
+            // Task2();
+        }
+
+        public static void Task1()
+        {
             Console.WriteLine("Enter a number from 2 to 20");
 
             string number = Console.ReadLine();
@@ -41,6 +48,7 @@ namespace CSLight
                     }
                 }
             }
+            Console.WriteLine("Done!");
             Console.ReadKey();
         }
     }
