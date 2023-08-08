@@ -11,6 +11,11 @@ namespace CSLight
     {
         static void Main(string[] args)
         {
+            var avg = (3 + 2 + 1) / 3;
+            var array = new double[] { 3, 2, 1, 2};
+            var avg2 = Enumerable.Average(array);
+
+            var template = $"jfkldsjfdl , fdsfd {avg},,,,, {avg2 * avg2}";
             Task1();
 
             // Task2();
