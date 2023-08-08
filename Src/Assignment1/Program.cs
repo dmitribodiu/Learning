@@ -11,7 +11,7 @@ namespace CSLight
     {
         static void Main(string[] args)
         {
-            var numberToSearch = 5;
+            var numberToSearch = 82;
             var array = new int[] { 5, 7, 9, 12, 24, 30, 44, 56, 82 };
 
             var found = BinarySearch(array, numberToSearch, 0, array.Length - 1);
@@ -115,7 +115,7 @@ namespace CSLight
                 return result;
             }
 
-            var mediumIndex = (max + 1) / 2;
+            var mediumIndex = (min + max) / 2;
             var mediumValue = array[mediumIndex];
 
             if (mediumValue > numberToSearch)
